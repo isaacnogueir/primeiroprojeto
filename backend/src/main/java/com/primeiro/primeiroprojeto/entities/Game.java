@@ -20,7 +20,7 @@ import com.primeiro.primeiroprojeto.entities.enums.Plataform;
 @Table(name = "tb_game")
 public class Game implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -39,8 +39,7 @@ public class Game implements Serializable {
 
 	public Game(Long id, String title, Plataform plataform, Genre genre) {
 		super();
-		
-		
+
 		this.id = id;
 		this.title = title;
 		this.plataform = plataform;
